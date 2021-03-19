@@ -81,7 +81,7 @@ def partie(taille_tab):
         if tab[randligne][randcolonne] == mine:  # Si mine touchée arrêter partie
             tab[randligne][randcolonne] = "Aïe"
             partie_perdue = True
-        else:  # Sinon calculer le nombre de bombes autours méthodes réalisée par Yannick
+        else:  # Sinon calculer le nombre de bombes autours
             if (randligne > 0 and randcolonne > 0) and tab[randligne - 1][randcolonne - 1] == mine:
                 nombre_de_la_case += 1
             if randligne > 0 and tab[randligne - 1][randcolonne] == mine:
